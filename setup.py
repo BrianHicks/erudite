@@ -1,9 +1,16 @@
 #!/usr/bin/python
+'setup.py for erudite'
 from setuptools import setup, find_packages
+
+try:
+    with open('README.md', 'r') as descfile:
+        desc = descfile.read()
+except IOError:
+    desc = ''
 
 setup(
     name = 'Erudite',
-    version = '1.0.1',
+    version = '1.0.2',
     packages = find_packages(),
 
     # metadata for PyPi and others
@@ -22,5 +29,5 @@ setup(
         'Topic :: Utilities',
     ],
 
-    long_description = open('README.md').read(),
+    long_description = desc
 )
