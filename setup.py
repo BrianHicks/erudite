@@ -10,7 +10,7 @@ except IOError:
 
 setup(
     name = 'Erudite',
-    version = '1.0.2',
+    version = '1.1.0',
     packages = find_packages(),
 
     # metadata for PyPi and others
