@@ -4,4 +4,4 @@
 import re
 
 zsh_history = re.compile(r':\s\d+:\d;(\w*).*')
-zsh_history_full = re.compile(r':\sd+:\d;(.*)')
+zsh_history_full = re.compile(r':\s\d+:\d;(.*)')
