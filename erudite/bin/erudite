@@ -1,1 +1,3 @@
 #!/usr/bin/python
+from erudite import run
+run()
