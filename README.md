@@ -23,16 +23,38 @@ If you just want to play around, and see what you can do:
 
     erudite --parser=zsh_history --logger=PrintingLogger ~/.zsh_history
 
-Contributing
-------------
+Developing
+----------
 
 Parsers (used to parse lines) are in `erudite/parsers.py`, and loggers (used to
 do things with parsed lines) are in `erudite/loggers.py`.
 
-Create a topic branch with your feature, and create a pull request. I'll
-probably accept it. Please update the readme, but don't add any install
-requirements in `setup.py`. Catch `ImportErrors` instead, like `StatHatLogger`
-does.
+Contributing
+------------
+
+It would be totally awesome to have many many more options in this script. I'm
+totally open to contributions. But there are a few things that will help me:
+
+ - Your fork should have a topic branch with your feature, requesting to pull
+   against `develop`
+ - Please don't add any requirements for loggers to setup.py - catch
+   ImportError and exit gracefully. (see StatHatLogger for an example)
+ - If you're adding a parser, it would be awesome if you could attach some
+   sample input.
+ - Just for fun, you might want to run pylint against your changes.
+ - If you're changing default settings, it's totally cool. Just ask me first.
+ - You should add yourself to Authors in the README.
+
+In particular, here are some things/ideas that would be great to have:
+
+ - Parser for [bash](http://www.gnu.org/software/bash/) history
+ - Parser for database logs
+ - Logger for [redis][1]/[mongo][2]/whatever nosql store you want to use
+ - Logger for [StatsD](https://github.com/etsy/statsd)
+ - And if you're feeling particularly ambitious: tests
+
+[1]: http://redis.io/
+[2]: http://www.mongodb.org/
 
 Authors
 -------
