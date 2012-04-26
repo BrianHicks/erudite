@@ -3,18 +3,14 @@ from setuptools import setup, find_packages
 
 setup(
     name = 'Erudite',
-    version = '0.0.1',
+    version = '1.0.0',
     packages = find_packages(),
-
-    install_requires = [
-        'pyyaml',
-    ],
 
     # metadata for PyPi and others
     author = 'Brian Hicks',
     author_email = 'brian@brianthicks.com',
     description = 'Log your command history to an analytics engine',
-    license = 'TODO',
+    license = 'Apache 2.0',
     url = 'https://github.com/BrianHicks/erudite',
     download_url = 'https://github.com/BrianHicks/erudite',
     scripts = ['erudite/bin/erudite'],
